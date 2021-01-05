@@ -35,7 +35,7 @@ function preload() {
 }
 
 function setup(){
-    var canvas = createCanvas(1400,600);
+    var canvas = createCanvas(displayWidth,displayHeight);
     
 bgs=createSprite(620,400,1400,800);
  bgs.addImage(bg);
@@ -116,7 +116,7 @@ function draw(){
     text("U", 505,200, 400, 400);
     text("O", 685,200, 400, 400);
     text("P", 775,200, 400, 400);
-    if(keyWentDown("A")|| toucheStarted(cNote)){
+    if(keyWentDown("A")){
    cNote.shapeColor=(77,74,73);
 cSound.play();
         touches=[];}
