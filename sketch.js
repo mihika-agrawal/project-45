@@ -114,7 +114,7 @@ function draw(){
     text("U", 505,200, 400, 400);
     text("O", 685,200, 400, 400);
     text("P", 775,200, 400, 400);
-    if(keyWentDown("A")|| touches.length > 0){
+    if(keyWentDown("A")|| touches.length > 160 && touches.lenght < 230){
    cNote.shapeColor=(77,74,73);
 cSound.play();
         touches=[];}
