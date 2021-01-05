@@ -10,6 +10,8 @@ var dNote2, dsNote2;
 var eNote2;
 var cSound,csSound;
 var touches=[];
+var valX,valY;
+
 function preload() {
    bg= loadImage("bg.png");
    border1= loadImage("border.png");
@@ -114,7 +116,7 @@ function draw(){
     text("U", 505,200, 400, 400);
     text("O", 685,200, 400, 400);
     text("P", 775,200, 400, 400);
-    if(keyWentDown("A")|| touches.length > 160 && touches.lenght < 230){
+    if(keyWentDown("A")|| toucheStarted(cNote)){
    cNote.shapeColor=(77,74,73);
 cSound.play();
         touches=[];}
@@ -218,4 +220,9 @@ if(keyWentDown("L")){
         eNote2.shapeColor="white";
            } 
     drawSprites();
+    function touchStarted(){
+  valX=mouseX;
+  valY=mouseY;
+  
+ }
 }
