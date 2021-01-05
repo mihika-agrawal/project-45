@@ -9,7 +9,7 @@ var cNote2,csNote2;
 var dNote2, dsNote2;
 var eNote2;
 var cSound,csSound;
-
+var touch=[];
 function preload() {
    bg= loadImage("bg.png");
    border1= loadImage("border.png");
@@ -114,7 +114,8 @@ function draw(){
     text("U", 505,200, 400, 400);
     text("O", 685,200, 400, 400);
     text("P", 775,200, 400, 400);
-    if(keyWentDown("A")){
+    if(keyWentDown("A")|| touch.length>0)}
+    touch=[];
 cNote.shapeColor=(77,74,73);
 cSound.play();}
  else{
