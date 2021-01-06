@@ -37,7 +37,7 @@ function preload() {
 function setup(){
     var canvas = createCanvas(displayWidth,displayHeight);
     
-bgs=createSprite(620,400,1400,800);
+bgs=createSprite(620,400,displayWidth,displayHeight);
  bgs.addImage(bg);
  bgs.scale=1.5;
 
