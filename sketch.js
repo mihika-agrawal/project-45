@@ -117,9 +117,10 @@ function draw(){
     text("O", 685,200, 400, 400);
     text("P", 775,200, 400, 400);
     if(keyWentDown("A") || touches.length.x <=235){
-   cNote.shapeColor=(77,74,73);
+    touches=[];
+       cNote.shapeColor=(77,74,73);
 cSound.play();
-        touches=[];}
+       }
  else{
 cNote.shapeColor="white";
    }
