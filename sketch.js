@@ -35,9 +35,9 @@ function preload() {
 }
 
 function setup(){
-    var canvas = createCanvas(displayWidth,displayHeight);
+    var canvas = createCanvas(1400,800);
     
-bgs=createSprite(620,400,displayWidth,displayHeight);
+bgs=createSprite(620,400,1400,800);
  bgs.addImage(bg);
  bgs.scale=1.5;
 
@@ -116,7 +116,7 @@ function draw(){
     text("U", 505,200, 400, 400);
     text("O", 685,200, 400, 400);
     text("P", 775,200, 400, 400);
-    if(keyWentDown("A")){
+    if(keyWentDown("A") || touches.length.x >= 160 && touches.length.x <=235){
    cNote.shapeColor=(77,74,73);
 cSound.play();
         touches=[];}
